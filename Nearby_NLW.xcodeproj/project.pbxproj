@@ -25,6 +25,11 @@
 		B8A623522D0B27FE00A5B32E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A623512D0B27FE00A5B32E /* HomeViewController.swift */; };
 		B8A623552D0B285C00A5B32E /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A623542D0B285C00A5B32E /* PlaceTableViewCell.swift */; };
 		B8A623582D0B321A00A5B32E /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A623572D0B321A00A5B32E /* PlaceModel.swift */; };
+		B8A6235A2D0B6EFB00A5B32E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A623592D0B6EFB00A5B32E /* Category.swift */; };
+		B8A6235D2D0B6F3300A5B32E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A6235C2D0B6F3300A5B32E /* HomeViewModel.swift */; };
+		B8A6235F2D0B789F00A5B32E /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A6235E2D0B789F00A5B32E /* PlaceAnnotation.swift */; };
+		B8A623622D0C6B3B00A5B32E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A623612D0C6B3B00A5B32E /* DetailsViewController.swift */; };
+		B8A623642D0C7B8700A5B32E /* WelcomeFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A623632D0C7B8700A5B32E /* WelcomeFlowDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,11 @@
 		B8A623512D0B27FE00A5B32E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B8A623542D0B285C00A5B32E /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		B8A623572D0B321A00A5B32E /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		B8A623592D0B6EFB00A5B32E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		B8A6235C2D0B6F3300A5B32E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B8A6235E2D0B789F00A5B32E /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		B8A623612D0C6B3B00A5B32E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		B8A623632D0C7B8700A5B32E /* WelcomeFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFlowDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,7 @@
 		B80FB0E62D0A1E80007A92BE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B8A623602D0C6B2900A5B32E /* Detail */,
 				B8A6234E2D0B27CC00A5B32E /* HomeView */,
 				B8A623422D0A2E3600A5B32E /* WelcomeView */,
 				B80FB0E92D0A1EA7007A92BE /* Splash */,
@@ -169,6 +180,7 @@
 			children = (
 				B8A623432D0A2E4C00A5B32E /* WelcomeView.swift */,
 				B8A623452D0A31B700A5B32E /* WelcomeViewController.swift */,
+				B8A623632D0C7B8700A5B32E /* WelcomeFlowDelegate.swift */,
 			);
 			path = WelcomeView;
 			sourceTree = "<group>";
@@ -184,6 +196,7 @@
 		B8A6234E2D0B27CC00A5B32E /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				B8A6235B2D0B6F2600A5B32E /* ViewModel */,
 				B8A623532D0B284900A5B32E /* TableViewCell */,
 				B8A6234F2D0B27EE00A5B32E /* HomeView.swift */,
 				B8A623512D0B27FE00A5B32E /* HomeViewController.swift */,
@@ -203,8 +216,26 @@
 			isa = PBXGroup;
 			children = (
 				B8A623572D0B321A00A5B32E /* PlaceModel.swift */,
+				B8A623592D0B6EFB00A5B32E /* Category.swift */,
+				B8A6235E2D0B789F00A5B32E /* PlaceAnnotation.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B8A6235B2D0B6F2600A5B32E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B8A6235C2D0B6F3300A5B32E /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B8A623602D0C6B2900A5B32E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B8A623612D0C6B3B00A5B32E /* DetailsViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,16 +307,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A6235D2D0B6F3300A5B32E /* HomeViewModel.swift in Sources */,
 				B80FB0E52D0A1E66007A92BE /* NearbyFlowController.swift in Sources */,
 				B8A623502D0B27EE00A5B32E /* HomeView.swift in Sources */,
+				B8A623642D0C7B8700A5B32E /* WelcomeFlowDelegate.swift in Sources */,
 				B8A623582D0B321A00A5B32E /* PlaceModel.swift in Sources */,
 				B8A623492D0A3E1B00A5B32E /* UIViewController+ext.swift in Sources */,
 				B8A623462D0A31B700A5B32E /* WelcomeViewController.swift in Sources */,
+				B8A6235A2D0B6EFB00A5B32E /* Category.swift in Sources */,
 				B80FB0E82D0A1E8D007A92BE /* SplashView.swift in Sources */,
 				B8A623522D0B27FE00A5B32E /* HomeViewController.swift in Sources */,
 				B80FB0EB2D0A1EB7007A92BE /* SplashViewController.swift in Sources */,
 				B8A6234B2D0A408F00A5B32E /* SplashFlowDelegate.swift in Sources */,
+				B8A623622D0C6B3B00A5B32E /* DetailsViewController.swift in Sources */,
 				B80FB0E12D0A1DEF007A92BE /* Colors.swift in Sources */,
+				B8A6235F2D0B789F00A5B32E /* PlaceAnnotation.swift in Sources */,
 				B8A623442D0A2E4C00A5B32E /* WelcomeView.swift in Sources */,
 				B8A623412D0A295D00A5B32E /* TipsView.swift in Sources */,
 				B8A623552D0B285C00A5B32E /* PlaceTableViewCell.swift in Sources */,
